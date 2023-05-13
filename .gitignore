@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+
+# build output
+/dist
+/build
+
+# IDE files
+/.vscode
+/.idea
+
+# misc
+/.DS_Store
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# npm
+/.npmrc
+/.npm
+
+# yarn
+/yarn-error.log
+/yarn.lock
+
+# TypeScript
+*.tsbuildinfo
+
+# React
+/.cache
+/public
