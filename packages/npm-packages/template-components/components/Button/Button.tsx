@@ -17,7 +17,7 @@ const ButtonWrapper = styled.button<{
 	border: none;
 	padding: 16px 24px;
 	background-color: var(--${(p) => p.baseColor}Color);
-	color: var(--${(p) => p.baseColor}Color900);
+	color: var(--${(p) => p.baseColor}Color-900);
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
