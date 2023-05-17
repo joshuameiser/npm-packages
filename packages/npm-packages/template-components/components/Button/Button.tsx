@@ -18,6 +18,7 @@ const ButtonWrapper = styled.button<{
 	padding: 16px 24px;
 	background-color: var(--${(p) => p.baseColor}Color);
 	color: var(--${(p) => p.baseColor}Color-900);
+	/* clip the shadows at the border radius */
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;

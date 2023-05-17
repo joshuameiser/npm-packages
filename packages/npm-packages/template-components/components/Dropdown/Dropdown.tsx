@@ -98,13 +98,49 @@ const DescriptionOpener = (props: { clicked: boolean }) => (
 );
 
 // TODO: Should I add the option to add access to whether the dropdown is open or not?
+
+/**
+ * DropdownProps
+ * @param {string} title - The title of the dropdown.
+ * @param {ReactNode} children - The content of the dropdown.
+ * @param {number} [duration=0.3] - The duration of the dropdown animation in seconds.
+ * @param {number} [maxWidth=240] - The maximum width of the dropdown in px.
+ * @param {string} [className] - Additional class name of the dropdown wrapper.
+ * @param {types["baseColor"]} [baseColor="secondary"] - The base color of the dropdown.
+ * @param {boolean} [lightVariant=true] - The light variant of the dropdown.
+ */
 export interface DropdownProps {
+	/**
+	 * The title of the dropdown.
+	 */
 	title: string;
+	/**
+	 * The content of the dropdown.
+	 */
 	children: ReactNode;
+	/**
+	 * The duration of the dropdown animation in seconds.
+	 * @default 0.3
+	 */
 	duration?: number;
+	/**
+	 * The maximum width of the dropdown in px.
+	 * @default 240
+	 */
 	maxWidth?: number;
+	/**
+	 * Additional class name of the dropdown wrapper.
+	 */
 	className?: string;
+	/**
+	 * The base color of the dropdown. Defaults to "secondary".
+	 * @default secondary
+	 */
 	baseColor?: types["baseColor"];
+	/**
+	 * The light variant of the dropdown. Defaults to true.
+	 * @default true
+	 */
 	lightVariant?: boolean;
 }
 

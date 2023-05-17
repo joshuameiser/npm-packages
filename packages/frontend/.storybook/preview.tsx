@@ -10,6 +10,8 @@ import {
 	Stories,
 } from "@storybook/blocks";
 import "../src/data/darkMode.scss";
+import "../src/index.css";
+import "../src/assets/fonts.css";
 
 export const decorators = [
 	(Story: React.ComponentType) => (
