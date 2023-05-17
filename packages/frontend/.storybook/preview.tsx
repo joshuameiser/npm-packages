@@ -28,6 +28,7 @@ const preview: Preview = {
 				date: /Date$/,
 			},
 		},
+		backgrounds: { default: "dark" },
 		docs: {
 			controls: { exclude: ["onClick"] },
 			theme: darkTheme,
