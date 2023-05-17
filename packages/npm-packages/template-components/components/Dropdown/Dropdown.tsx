@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { types } from "../../data/types";
 
+/**
+ * CSS class names for the Dropdown component.
+ * @name dropdownClasses
+ * @property {string} root - The class name for the root element of the component.
+ * @property {string} heading - The class name for the heading of the dropdown.
+ * @property {string} content - The class name for the content of the dropdown.
+ */
 export const dropdownClasses = {
 	root: "dropdownClasses-root",
 	heading: "dropdownClasses-heading",
@@ -98,7 +105,6 @@ const DescriptionOpener = (props: { clicked: boolean }) => (
 );
 
 // TODO: Should I add the option to add access to whether the dropdown is open or not?
-
 /**
  * DropdownProps
  * @param {string} title - The title of the dropdown.
