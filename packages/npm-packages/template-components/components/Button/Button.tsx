@@ -84,8 +84,12 @@ export const buttonClasses = {
 
 // TODO: Add a disabled state
 /**
- * Props for the Button component.
- * @name ButtonProps
+ * ButtonProps
+ * @param {ReactNode} children - The content of the button.
+ * @param {(event: React.MouseEvent<HTMLButtonElement>) => void} onClick - The function to execute on button click.
+ * @param {types["baseColor"]} [baseColor="primary"] - The base color of the button.
+ * @param {string} [className] - Additional class name of the button.
+ * @param {"button" | "submit" | "reset"} [type="button"] - The type of the button.
  */
 export interface ButtonProps {
 	/**
@@ -103,8 +107,7 @@ export interface ButtonProps {
 
 	/**
 	 * The base color of the button.
-	 * @type types["baseColor"] | undefined
-	 * @default "primary"
+	 * @default primary
 	 * @optional
 	 */
 	baseColor?: types["baseColor"];
