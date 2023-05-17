@@ -12,7 +12,7 @@ import {
 import "../src/data/darkMode.scss";
 
 export const decorators = [
-	(Story) => (
+	(Story: React.ComponentType) => (
 		<div data-theme="dark-mode">
 			<Story />
 		</div>

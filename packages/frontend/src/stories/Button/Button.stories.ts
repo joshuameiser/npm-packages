@@ -1,26 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { Button } from "@joshuameiser/template-components";
+// import { docsPage } from "@storybook/addon-docs/blocks";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta: Meta<typeof Button> = {
-	title: "Example/Button",
+	title: "template-components/Button",
 	component: Button,
-	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-	tags: ["autodocs"],
-	// More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-	// argTypes: {
-	// 	children: { control: "text" },
-	// 	baseColor: {
-	// 		control: {
-	// 			type: "select",
-	// 			options: ["primary", "secondary", "tertiary"],
-	// 		},
-	// 	},
-	// 	type: {
-	// 		control: { type: "select", options: ["button", "submit", "reset"] },
-	// 	},
-	// },
 };
 
 export default meta;
@@ -37,17 +22,13 @@ export const Primary: Story = {
 export const Secondary: Story = {
 	args: {
 		children: "Button",
+		baseColor: "secondary",
 	},
 };
 
-export const Large: Story = {
+export const Tertiary: Story = {
 	args: {
 		children: "Button",
-	},
-};
-
-export const Small: Story = {
-	args: {
-		children: "Button",
+		baseColor: "tertiary",
 	},
 };
