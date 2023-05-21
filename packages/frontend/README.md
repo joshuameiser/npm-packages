@@ -7,7 +7,7 @@ There are several things which I needed for most of my React applications, which
 ## What does it include?
 
 - Created with _vite_ & used _pnpm_ as a package manager
-- _vite-plugin-pwa_ was added for out of the box PWA functionality
+- _vite-plugin-pwa_ was deleted from the package as it interfered with Storybook and was not necessary in this cae
 - _styled-components_ package was added
 - _i18n_ was added for translation support
 - my _@joshuameiser/component-library_ package was added for my own color theme toggle and language toggle
